@@ -46,7 +46,7 @@ def test_count_3() -> None:
     assert count([]) == {}
 
 
-def favorite_color_1() -> None:
+def test_favorite_color_1() -> None:
     """Favorite Color Use Case 01"""
     favorite_color_1: dict[str, str] = {
         "Emily": "Pink",
@@ -58,28 +58,28 @@ def favorite_color_1() -> None:
     assert favorite_color(favorite_color_1) == favorite_color_2
 
 
-def favorite_color_2() -> None:
+def test_favorite_color_2() -> None:
     """Favorite Color Use Case 02"""
     favorite_color_1: dict[str, str] = {"Unc": "Blue", "State": "Red", "Duke": "Blue"}
     favorite_color_2: str = "Blue"
     assert favorite_color(favorite_color_1) == favorite_color_2
 
 
-def favorite_color_3() -> None:
+def test_favorite_color_3() -> None:
     """Favorite Color Edge Case"""
     assert favorite_color({}) == ""
 
 
-def bin_len_1() -> None:
+def test_bin_len_1() -> None:
     """Bin Len Use Case 01"""
     assert bin_len(["the", "quick", "fox"]) == {3: {"the", "fox"}, 5: {"quick"}}
 
 
-def ben_len_2() -> None:
+def test_ben_len_2() -> None:
     """Bin Len Use Case 02"""
     assert bin_len(["the", "the", "fox"]) == {3: {"the", "fox"}}
 
 
-def ben_len_3() -> None:
+def test_ben_len_3() -> None:
     """Bin Len Edge Case"""
     assert bin_len([]) == {}
